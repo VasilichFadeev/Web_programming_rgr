@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Метаданные -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Слайдер">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Василий Фадеев">
+    <!-- Название страницы -->
+    <title>Слайдер</title>
+    <!-- Стили в styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Подключение скрипта-слайдера -->
+    <script src="slider.js" defer></script>
+  </head>
+  <body>
+    <!-- Обёртка для всего слайдера -->
+    <div class="viewer-shell">
+      <!-- Кнопка "Назад" -->
+      <button class="btn-nav" id="btnPrev">
+        <img src="assets/icons/Button_left.png" alt="Назад">
+      </button>
+      <!-- Окно просмотра -->
+      <div class="image-window">
+        <img id="currentImage" src="" alt="">
+        <div class="caption" id="caption"></div>
+      </div>
+      <!-- Кнопка "Вперёд" -->
+      <button class="btn-nav" id="btnNext">
+        <img src="assets/icons/Button_right.png" alt="Далее">
+      </button>
+    </div>
+  </body>
+</html>
